@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(#01012e,#003296);
+    font-family: sans-serif;
+    color: white;
+}
+
+.app h1{
+    top: 0px;
+    height: 100px;
+}
+
+ .info{
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+

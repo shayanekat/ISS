@@ -1,10 +1,13 @@
-window.addEventListener('load', ()=> {
+window.addEventListener('load', ()=> { //DOM event load
+    //set variables and constants
     let coord = document.querySelector('.coords p');
     let pers = document.querySelector('.persons p');
 
     const apipers = 'http://api.open-notify.org/astros.json';
     const apicoord = 'http://api.open-notify.org/iss-now.json';
 
+    //get data
+    //person in space
     fetch(apipers)
         .then(respers => {
             return respers.json();
@@ -15,6 +18,7 @@ window.addEventListener('load', ()=> {
             pers.textContent = persone
         });
     
+        //iss coordinates
     fetch(apicoord)
         .then(respco => {
             return respco.json();
